@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Julius AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="no-js">
+    <main>
+        <div class="signup-container">
+            <div class="form-card">
+                <h1>Welcome</h1>
+                <p class="subtitle">Sign Up to Julius AI to continue to Julius AI.</p>
+
+                <form id="signup-form" novalidate>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Email address" 
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-wrapper">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Password" 
+                                autocomplete="new-password"
+                                required
+                            >
+                            <button type="button" class="toggle-password" id="toggle-password" aria-label="Toggle password visibility">
+                                Show password
+                            </button>
+                        </div>
+
+                        <div class="password-requirements">
+                            <p>Your password must contain:</p>
+                            <ul>
+                                <li>At least 10 characters</li>
+                                <li>At least 3 of the following:</li>
+                                <ul class="sub-requirements">
+                                    <li>Lower case letters (a-z)</li>
+                                    <li>Upper case letters (A-Z)</li>
+                                    <li>Numbers (0-9)</li>
+                                    <li>Special characters (e.g. !@#$%^&*)</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Continue</button>
+
+                    <div class="login-link">
+                        Already have an account? <a href="#">Log in</a>
+                    </div>
+
+                    <div class="divider">
+                        <span>Or</span>
+                    </div>
+
+                    <div class="oauth-buttons">
+                        <button type="button" class="btn-oauth btn-google">
+                            Continue with Google
+                        </button>
+                        <button type="button" class="btn-oauth btn-apple">
+                            Continue with Apple
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/sign-up.js"></script>
+</body>
+</html>
